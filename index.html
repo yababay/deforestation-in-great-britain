@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/hmf.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="js/showdown.min.js" defer></script>
+    <script src="js/settings.js" defer></script>
+    <script src="js/readme.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <title>Обезлесение Великобритании</title>
+</head>
+<body>
+    <header>
+        <h1>...</h1>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-6">
+                <div id="inputs">
+                    <div class="range-holder">
+                        <label for="furnaces-per-county" class="form-label">Горнов на графство: <strict>50</strict></label>
+                        <input type="range" class="form-range" id="furnaces-per-county" value="50" min="10" max="100" step="10">
+                    </div>
+                    <div class="button-holder">
+                        <button class="btn btn-primary">Смоделировать</button>
+                    </div>
+                </div>
+                <div class="canvas-holder">
+                    <canvas width=385 height=600></canvas>
+                    <img src="united-kindom.png" style="display: none;" />
+                </div>
+                <p class="text-center">Квадратных километров на 1 пиксель: <strong id="km-per-pixel"></strong></p>
+            </div>
+            <div class="col-6" id="readme">
+            </div>
+    </main>
+    <footer>
+        (C) 2022, Михаил Беляков
+    </footer>
+    <!-- div class="alert alert-primary d-none" role="alert" id="conclusion">
+        A simple primary alert—check it out!
+    </div -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="conclusion">
+        <span></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</body>
+</html>

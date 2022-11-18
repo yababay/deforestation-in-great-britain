@@ -1,0 +1,45 @@
+#readme {
+    padding-left: 2rem;
+}
+
+.range-holder {
+    width: 250px;
+}
+
+main .row {
+    width: 1000px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#conclusion {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    width: 480px;
+} 
+
+h1 {
+    text-align: center;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.canvas-holder {
+    margin: 1rem auto;
+    width: 385px;
+}
+
+footer {
+    font-size: smaller;
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+:root {
+    --header-height: 4rem;
+    --footer-height: 2rem;
+    --main-min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+html, body, header, footer, main, h1 {
+    margin:  0;
+    padding: 0;
+}
+
+main {
+    min-height: var(--main-min-height);
+}
+
+header {
+    height: var(--header-height);
+}
+
+footer {
+    height: var(--footer-height);
+    line-height: var(--footer-height);
+}
