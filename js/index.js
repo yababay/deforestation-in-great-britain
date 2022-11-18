@@ -58,11 +58,8 @@ async function deforestation(){
   const speed = Math.round(DEFORESTATION_SPEED_PER_FURNACE * COUNTY_COUNT * furnacesCount)
   const englandPixelsCount = Math.round(filled.length * ENGLAND_SQUARE / BRITAIN_SQUARE)
   const imageData = ctx.getImageData(0, 0, width, height);
-  ctx.drawImage(image, 0, 0, 385, 600)
   const {data} = imageData
-  for(let i = 0; i < origin.length; i ++){
-    data[i] = origin[i]
-  }
+  for(let i = 0; i < origin.length; i ++) data[i] = origin[i]
   ctx.putImageData(imageData, 0, 0)
   for(let i = filled.length; i > englandPixelsCount; i--){
       const n = filled[i]

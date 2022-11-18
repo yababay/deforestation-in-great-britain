@@ -1,5 +1,7 @@
 #readme {
     padding-left: 2rem;
+    overflow-y: auto;
+    max-height: 700px;
 }
 
 .range-holder {
